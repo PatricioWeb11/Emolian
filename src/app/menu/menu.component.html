@@ -1,0 +1,21 @@
+<div class="menu-container">
+  <div class="contenedor-menu contenedor">
+    <div class="logo">
+      <h2>Logo</h2>
+    </div>
+    <!-- Botón hamburguesa -->
+    <button class="hamburger" (click)="toggleMenu()">
+      ☰
+    </button>
+
+    <!-- Menú de navegación -->
+    <nav [class.open]="isMenuOpen">
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#portafolio">Portafolio</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>

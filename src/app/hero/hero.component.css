@@ -1,0 +1,22 @@
+.hero{
+  background-color: #031739;
+  height: 100vh;
+}
+
+.contenedor-hero{
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.contenedor-hero .seccion-titulo{
+  color: #fff;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor-hero .seccion-img{
+  width: 50%;
+}
