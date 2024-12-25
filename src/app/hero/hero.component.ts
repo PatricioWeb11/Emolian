@@ -6,12 +6,9 @@ import { Component } from '@angular/core';
   styleUrl: './hero.component.css'
 })
 export class HeroComponent {
-  titulo: string = 'Bienvenido a EmolianWeb';
-  lottieOptions = {
-    path: 'https://assets2.lottiefiles.com/packages/lf20_your-animation.json', // URL de la animación
-    loop: true,
-    autoplay: true,
-  };
+  titulo: string = 'Soy, Patricio Fuenzalida';
+  subTitulo: string = 'Desarrollador Web';
+
 }
 
 
