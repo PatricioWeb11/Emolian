@@ -18,7 +18,7 @@
 
 .contenedor-menu{
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
 }
 
@@ -43,19 +43,22 @@
 }
 
 /* Menú de navegación */
-nav {
-  display: none;
-  flex-direction: column;
-  background-color: #1a2c44;
-  position: absolute;
-  top: 110px;
-  left: 0;
-  width: 100%;
-  transition: transform 0.3s ease, opacity 0.3s ease;
+nav.menu {
+  opacity: 0;
+  max-height: 0;
+  transition-delay: 100ms 300ms;
+  transition-timing-function: ease-in-out;
+  transition-duration: 500ms;
+  transition-property: opacity, max-height;
 }
 
 nav.open {
-  display: flex;
+  opacity: 1;
+  max-height: 300px;
+  transition-delay: 100ms 300ms;
+  transition-timing-function: ease-in-out;
+  transition-duration: 500ms;
+  transition-property: max-height, opacity;
 }
 
 nav ul {
@@ -85,12 +88,23 @@ nav ul li a {
 
 /* Estilos para desktop */
 @media (min-width: 768px) {
+  nav.menu {
+    opacity: 1;
+    /* max-height: 0; */
+  }
+  .contenedor-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   .hamburger {
     display: none; /* Ocultar el botón hamburguesa */
   }
 
   nav {
-    display: flex !important;
+    display: flex;
     flex-direction: row;
     position: static;
     background: none;

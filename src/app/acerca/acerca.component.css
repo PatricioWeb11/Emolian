@@ -5,7 +5,7 @@
 
 @media (max-width: 768px){
   .contenido{
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 }
 
@@ -21,7 +21,6 @@
 @media (max-width: 768px){
   .item2{
     width: 100%;
-    margin-bottom: 50px;
   }
 
   .item2 .img{
@@ -30,6 +29,7 @@
 
   .item1{
     width: 100%;
+    margin-bottom: 50px;
   }
 
   .item1 .texto{
