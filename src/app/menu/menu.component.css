@@ -67,7 +67,7 @@ nav ul {
   margin: 0;
 }
 
-@media (max-width: 768px){
+@media (max-width: 1180px){
   nav ul{
     display: flex;
     flex-direction: column;
@@ -87,7 +87,7 @@ nav ul li a {
 }
 
 /* Estilos para desktop */
-@media (min-width: 768px) {
+@media (min-width: 1180px) {
   nav.menu {
     opacity: 1;
     /* max-height: 0; */

@@ -7,13 +7,13 @@
   position: relative;
 }
 
-@media (max-width: 768px){
+@media (max-width: 1180px){
   .contenido-header{
     height: auto;
   }
 }
 
-@media (max-width: 768px){
+@media (max-width: 1180px){
   .contenido{
     height: auto;
     padding-bottom: 50px;
